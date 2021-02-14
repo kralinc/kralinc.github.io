@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <link rel="stylesheet" type="text/css" href="css/standard.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <meta charset="utf-8">
+        <title>Mental Math Trainer</title>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/mentalMath.js" defer></script>
+        <script src="js/settings.js" defer></script>
+    </head>
+    
+    <body>
+        <div id="content">
+            <div id="display-card">
+                <div id="settings">
+                    <h1 class="h1">Mental Math Trainer</h1>
+                    <form id="settings-form">
+                        <div id="checkboxes">
+                            <p class="form-error">Please select an operation.</p>
+                            <input type="checkbox" id="checkbox-add" name="checkbox-add" value="Addition">
+                            <label for="checkbox-add">Addition</label>
+                            <input type="checkbox" id="checkbox-sub" name="checkbox-sub" value="Subtraction">
+                            <label for="checkbox-sub">Subtraction</label>
+                            <input type="checkbox" id="checkbox-mul" name="checkbox-mul" value="Multiplication" checked="true">
+                            <label for="checkbox-mul">Multiplication</label>
+                            <input type="checkbox" id="checkbox-div" name="checkbox-div" value="Division">
+                            <label for="checkbox-div">Division</label>
+                            <input type="checkbox" id="checkbox-square" name="checkbox-square" value="Square">
+                            <label for="checkbox-square">Square</label>
+                            <input type="checkbox" id="checkbox-sqrt" name="checkbox-sqrt" value="SquareRoot">
+                            <label for="checkbox-sqrt">Square Root</label>
+                        </div>
+                        <div>
+                            <label for="settings-range-low">Number Range</label>
+                            <input type="number" id="settings-range-low" class="form-input" name="settings-range-low" value="2">
+                            <span>to</span>
+                            <input type="number" id="settings-range-high" class="form-input" name="settings-range-high" value="12">
+                        </div>
+                        <label for="num-problems">Number of Problems</label>
+                        <input type="number" id="num-problems" class="form-input" name="num-problems" value="10">
+                        <br>
+                        <input type="submit" name = "submit" value="Submit">
+                    </form>
+                </div>
+
+                <div id="game">
+                    <p id="expression" class="h2"></p>
+                    <input type="text" id="math-in">
+                </div>
+
+                <div id="report">
+                    <p class="h2">Report</p>
+                    <p id="report-time" class="h3"></p>
+                    <p id="report-correct" class="h3"></p>
+                    <a href="#reset-button">[v]</a>
+                    <br>
+                    <div id="reports-container"></div>
+                    <button id="reset-button">Reset</button>
+                    <a href="#report">[^]</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

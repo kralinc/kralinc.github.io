@@ -1,0 +1,111 @@
+/* Disable default css behavior */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* declare variables */
+:root {
+    --main-bg-color: white;
+    --main-text-color: black;
+    --main-button-color: #CCC;
+	--main-button-color-hover: #BBB;
+	--main-input-color: #DDD;
+	--main-input-color-focus: #EEE;
+    --content-width: 60%;
+    --standard-pad: 1.3em;
+}
+
+/* Create full-page background image */
+html { 
+  background: url("../img/back.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* set to my preferred font */
+h1, h2, h3, h4, h5, h6, label, p, span {
+    font-family: sans-serif;
+}
+
+/* h1 elements displayed as p for some reason, therefore i manually styled it */
+h1 {
+	font-weight: bold;
+	font-size: 4em;
+	margin-bottom: var(--standard-pad);
+}
+
+/* Container to center the card on the page */
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* centered card that holds the site content */
+#display-card {
+    background-color: var(--main-bg-color);
+    width: var(--content-width);
+    padding: var(--standard-pad);
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 1em 1em 3em;
+}
+
+/* Add gutters to everything */
+* {
+	margin: var(--standard-pad);
+}
+
+/* text input boxes in forms */
+.form-input {
+	border: none;
+	background-color: var(--main-input-color);
+	transition: padding 0.2s, background-color 0.2s;
+	padding: var(--standard-pad);
+}
+
+.form-input:focus {
+	background-color: var(--main-input-color-focus);
+	padding: calc(var(--standard-pad) * 1.1);
+}
+
+.form-div-invalid {
+	border: 2px solid crimson;
+}
+
+.form-error {
+	display: none;
+	color: crimson;
+}
+
+/* any buttons */
+.button {
+	background-color: var(--main-button-color);
+	border: none;
+	transition: background-color 0.2s;
+	font-weight: bold;
+	padding: var(--standard-pad);
+}
+
+.button:hover {
+	background-color: var(--main-button-color-hover);
+}
