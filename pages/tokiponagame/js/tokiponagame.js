@@ -6,7 +6,17 @@ function makeNewSentence()
 {
     let output = "";
 
-    const la = 1;
+    let la;
+    const laChance = Math.random();
+    if (laChance < 0.03)
+    {
+        la = 2;
+    }else if (laChance < 0.0005)
+    {
+        la = 3;
+    }else {
+        la = 1;
+    }
 
     //each "round" is a sentence segment after each "la"
     for (let rounds = 0; rounds < la; rounds++)
@@ -16,6 +26,11 @@ function makeNewSentence()
         {
             const chaos = Math.random();
             parts[words] = getRandomContentWord();
+            if (chaos < 0.01 && Math.random() < 0.5)
+            {
+                parts[words] += " pi ";
+            }
+
             if (chaos < 0.1)
             {
                 parts[words] += " " + getRandomContentWord();
@@ -27,7 +42,13 @@ function makeNewSentence()
             }
         }
 
-        output = parts[0] + " li " + parts[1] + " e " + parts[2];
+        if (!(parts[0] === "mi" || parts[0] === "sina"))
+        {
+            parts[0] += " li ";
+        }
+
+
+        output += parts[0] + parts[1] + " e " + parts[2];
         if (rounds < la - 1)
         {
             output += " la ";
