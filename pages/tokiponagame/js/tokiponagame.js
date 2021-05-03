@@ -8,10 +8,10 @@ function makeNewSentence()
 
     let la;
     const laChance = Math.random();
-    if (laChance < 0.03)
+    if (laChance < 0.25)
     {
         la = 2;
-    }else if (laChance < 0.0005)
+    }else if (laChance < 0.0625)
     {
         la = 3;
     }else {
@@ -42,13 +42,23 @@ function makeNewSentence()
             }
         }
 
+        //mi and sina as the only subject are not followed by li
         if (!(parts[0] === "mi" || parts[0] === "sina"))
         {
             parts[0] += " li ";
+        }else {
+            parts[0] += " ";
         }
 
 
         output += parts[0] + parts[1] + " e " + parts[2];
+
+        //There's a chance of there being no "e" part
+        if (Math.random() < 0.5)
+        {
+            output = output.split(" e ")[0];
+        }
+
         if (rounds < la - 1)
         {
             output += " la ";
