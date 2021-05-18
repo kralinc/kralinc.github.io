@@ -1,0 +1,56 @@
+p, h1, h2, h3, label, a {
+    font-family: monospace;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+#content {
+    text-align: center;
+}
+
+#all-links {
+    display: flex;
+}
+
+.link-container {
+    margin: 1em;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2em;
+}
+
+html { 
+  background: url("back.png") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.link {
+    display: inline-block;
+    margin: 1em;
+    padding: 2em;
+    font-size: 4em;
+    background-color: #ffffff44;
+    transition: background-color 0.2s, padding 0.2s, color 0.2s;
+    color: #000;
+    border-radius: 1em;
+}
+
+.link:hover {
+    background-color: #ffffff99;
+    padding: 2.2em;
+    color: #00c;
+}
+
+
