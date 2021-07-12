@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <link rel="stylesheet" type="text/css" href="css/proximity.css">
+		<script src="js/heap.js"></script>
+        <script src="js/setup.js" defer></script>
+        <script src="js/proximity.js" defer></script>
+        <meta charset="utf-8">
+        <title>Proximity</title>
+    </head>
+    <body>
+        <p id="remove-me" style="font-size: 3em;">This app requires Javascript to run. Either enable Javascript or use a browser which supports it.</p>
+        <div id="setup-container" class="flexy">
+            <h1>PROXIMITY</h1>
+            <form id="setup-form" class="flexy">
+                <div>
+                <p class="label">Maximum number of tiles</p>
+                <input class="num-in" type="number" id="max-number-input" value="24" required>
+                </div>
+                <div>
+                <p class="label">Number of players</p>
+                <input class="num-in" type="number" id="num-players-input" value="2" required>
+                </div>
+                <div>
+                <p class="label">Number of humans</p>
+                <input class="num-in" type="number" id="num-humans-input" value = "1" required>
+                </div>
+                <div>
+                <p class="label">AI Delay (ms)</p>
+                <input class="num-in" type="number" id="num-delay-input" value = "250" required>
+                </div>
+                <div>
+                <p class="label">Allow Corners</p>
+                </div>
+                    <label class="container">
+                        <input type="checkbox" id="check-corners" checked="checked">
+                        <span class="checkmark"></span>
+                    </label><br>
+                <input class="submit-in" type="submit" id="setup-form-submit" value="Play">
+                <a class="submit-in" href="help.html">Help</a>
+            </form>
+            <p id="setup-form-error"></p>
+        </div>
+        <div id="flexbox" class="flexy">
+            <div class="grid-container">
+            </div>
+            <div id="ui" class="flexy">
+                <div id="next-color" class="tile"><p id="next-num"></p></div>
+                <div id="scores" class="flexy"></div>
+            </div>
+        </div>
+        <div id="win-box-container">
+            <div id="win-box" class="flexy">
+                <button id="reset" class="submit-in">Restart</button>
+                <button id="reload" class="submit-in">Settings</button>
+                <p id="win-message"></p>
+            </div>
+        </div>
+    </body>
+</html>

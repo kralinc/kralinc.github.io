@@ -1,0 +1,54 @@
+/* all of the colored text is hidden until the user selects their colors */
+.coloredtext {
+    display: none;
+    padding: 1em;
+}
+
+/*but a bit of a margin around everything so nothing smashes into the sides of the screen*/
+#content {
+ margin: 2em;   
+}
+
+h1, p, label {
+ font-family: sans-serif;
+}
+
+/* stuff for forms below here */
+
+/*container for the whole form*/
+#favcolorform {
+ background-color: #EEE;
+ border-radius: 3em;
+ float: left;
+ padding: 2em;
+ margin: 2em;
+}
+
+/*space input elements out a bit */
+input {
+ margin: 0 0 1em 1em;
+}
+
+/*fancy submit button with an animation and everything*/
+#submit {
+ margin: auto;
+ background-color: #CCC;
+ border-radius: 1em;
+ font-weight: bold;
+ padding: 1em;
+ transition: background-color 0.2s;
+}
+
+#submit:hover {
+ background-color: #AAA;
+}
+/* stuff for forms above here*/
+
+/*My son*/
+#ska {
+
+    border-radius: 50%;
+    float: right;
+    border: 2em double pink;
+    margin: 5em;
+}

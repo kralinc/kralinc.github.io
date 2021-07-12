@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/lab3.css">
+        <!-- the script must be deferred because it depends on the document being loaded.-->
+        <script defer src="js/lab3.js"></script>
+        <meta charset="utf-8">
+        <title>Cookie</title>
+    </head>
+
+    <body>
+        <div id="content">
+            <!-- all of the colored text to be displayed is inside of this div-->
+            <div class="coloredtext">
+                <h1 class="coloredtext">WELCOME TO YOUR PERFECT COLOR PAGE</h1>
+                <p class="coloredtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc arcu ex, pharetra sit amet consequat ut, aliquam a metus. Vivamus vitae fermentum tellus. Proin convallis tempor odio eget vulputate. Etiam nec nunc ut ante semper viverra congue sed orci. Sed eros neque, ullamcorper id pulvinar sit amet, hendrerit sit amet lorem. Nullam mattis lacinia justo in eleifend. Aliquam posuere lorem ut lacinia blandit. Phasellus interdum est sagittis, suscipit ex eu, ornare dui. Praesent vel nulla purus. Curabitur pulvinar enim euismod purus congue, ut interdum ex ultrices. Nulla purus odio, hendrerit id arcu sed, interdum placerat dui.</p>
+            </div>
+
+            <!-- the form where the user enters their color preferences -->
+            <!-- if possible I should learn how to submit a form without reloading the page-->
+            <form id="favcolorform" onsubmit="getColors()">
+                <div class="formitem">
+                    <label for="textcolor">Select your favorite text color:</label>
+                    <input type="color" id="textcolor" name="textcolor"><br>
+                </div>
+                <div class="formitem">
+                    <label for="bgcolor">Select your favorite background color:</label>
+                    <input type="color" id="bgcolor" name="bgcolor"><br>
+                </div>
+                <div id="formitem">
+                    <input type="submit" id="submit" value="Submit">
+                </div>
+            </form>
+            <!--:)-->
+            <img id="ska" src="../lab2/img/ska.png">
+        </div>
+    </body>
+</html>

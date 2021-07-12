@@ -1,0 +1,158 @@
+/*Starts off everything black. Hides overflow so things going offscreen doesn't add scrollbars*/
+body {
+    background-color: BLACK;
+    overflow: hidden;
+}
+
+p, div, a
+{
+    font: 1em Arial, sans-serif;
+}
+
+/*Hide the audio player*/
+audio {
+    display: none;
+}
+
+/*Generic flexbox*/
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/*The area where the game elements are drawn.*/
+#game-canvas {
+/*    Width same as height. A square play area*/
+    width: 100vh;
+    height: 100vh;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+/*Any of the screens that takes up the whole screen and obscures the background*/
+.fullscreen {
+    position: absolute;
+    z-index: 1000;
+    top:0px;
+    left: 0px;
+    background-color: #FFFA;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/*The game over screen. Starts invisible*/
+#gameover
+{
+    display: none;
+}
+
+#gameover > p {
+    font-size: 3em;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+/*The title of the game.*/
+#title {
+    font: 3em Arial, sans-serif;
+    font-weight: bold;
+}
+
+#title-container {
+    margin-bottom: 3em;
+    flex-direction: column;
+}
+
+#title-container a
+{
+    font: 1.5em Arial, sans-serif;
+    text-decoration: none;
+}
+
+/*CSS for the settings form when the app starts*/
+.radio-option {
+    display: inline-block;
+    margin: 1em;
+    padding: 0.5em;
+    background-color: #FFF;
+    border-radius: 1em;
+    border: 0.5em solid black;
+}
+
+.radio-option > * {
+    font: 2em Arial, sans-serif;
+    padding: 1em;
+}
+.radio-option:hover {
+    background-color: #DFD;
+}
+
+.radio-option input[type="submit"] {
+    background-color: #0000;
+    border: none;
+    padding: 0.5em;
+}
+
+.radio-option input[type='radio'] {
+    width: 1em;
+    height: 1em;
+    padding: 3em;
+}
+
+
+/*The bullets the player has to dodge*/
+.bullet {
+    background-color: black;
+    position: absolute;
+    border-radius: 50%; 
+}
+
+/*The player duh*/
+#player {
+    background-color: red;
+    width: 2%;
+    height: 2%;
+    position: absolute;
+}
+
+/*A dot at the center of the screen so the player can more easily see where bullets are coming from*/
+#center-dot {
+    width: 1%;
+    height: 1%;
+    background-color: dodgerblue;
+    position: absolute;
+    transform: translate(50vh, 50vh);
+}
+
+/*Explode animation when the player dies*/
+@keyframes splode {
+    from {
+        width: 2%;
+        height: 2%;
+        border: 0.5em dashed crimson;
+    }
+    
+    to {
+        width: 110%;
+        height: 110%;
+        transform: translate(-50vh, -50vh);
+        background-color: #FFF0;
+        border-color: #FFF0;
+    }
+}
+
+/*The thing that happens when the player dies*/
+.exploded {
+    width: 110%;
+    height: 110%;
+    transform: translate(-50vh, -50vh);
+    background-color: #FFF0;
+    animation-name: splode;
+    animation-duration: 1s;
+    position: absolute;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/proj2.css">
+        <link rel="stylesheet" type="text/css" href="css/css-reset.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/proj2-definitions.js"></script>
+        <script src="js/patterns.js"></script>
+        <script src="js/proj2.js" defer></script>
+        <meta charset="utf-8">
+        <title>BULLET HELL!</title>
+    </head>
+    <body>
+        <!-- You must java javascript message -->
+        <p id="remove-me" style="color: white;background-color: black;">This application requires Javascript to run.</p>
+        
+        <!-- the settings menu -->
+        <div id="settings" class="flexbox fullscreen">
+            <div id="title-container" class="flexbox">
+                <p id="title">Bullet Hell!</p>
+                <a href="how.html">How do I play video game!?</a>
+            </div>
+            <form id="settings-form">
+                <div class="radio-option">
+                    <input type="radio" id="easy" name="difficulty" value="easy" required>
+                    <label for="easy">Easy</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="hard" name="difficulty" value="hard" required>
+                    <label for="hard">Hard</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="lol" name="difficulty" value="lol" required>
+                    <label for="lol">lol</label>
+                </div>
+                <div class="radio-option">
+                    <input type="submit" id="submut" value="&gt;">
+                </div>
+            </form>
+        </div>
+        
+        <!-- the game over screen -->
+        <div id="gameover" class="flexbox fullscreen" ><p>Game over!</p><p id="score"></p><p id="highscore"></p><p>Press any key to retry.</p></div>
+        
+        <!-- The actual play area of the game -->
+        <div class="flexbox">
+            <div id="game-canvas">
+                <div id="center-dot"></div>
+                <div id="player"></div>
+            </div>
+        </div>
+        
+        <!-- audio source to play music, hidden from user -->
+        <audio id="music" loop>
+            <source src="" type="audio/ogg">
+        </audio>
+        
+    </body>
+</html>

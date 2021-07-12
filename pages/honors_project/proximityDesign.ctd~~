@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<cherrytree>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="Proximity" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1601770839.78" ts_lastsave="1601772209.69" unique_id="1">
+		<rich_text>Game made in JavaScript
+
+On a square grid the player is tasked with controlling the greatest value of tiles.
+Each player takes turns placing tiles on the grid. The tiles come from a list of values 1-23 sorted randomly.
+If a tile is of greater value than the tiles around it, those tiles convert to your color.
+
+
+Gameplay:
+    Settings
+    loop:
+        Place tile
+        AI place tile
+     End when all tiles are placed
+     Winner is the one with more controlled tiles
+</rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Classes" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1601772209.69" ts_lastsave="1601774824.67" unique_id="2">
+			<rich_text></rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Tile" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1601772214.48" ts_lastsave="1601774477.33" unique_id="3">
+				<rich_text justification="left"></rich_text>
+				<table char_offset="0" col_max="600" col_min="40">
+					<row>
+						<cell>int value</cell>
+						<cell>The numeric value of the tile.</cell>
+					</row>
+					<row>
+						<cell>color color</cell>
+						<cell>The color of the tile</cell>
+					</row>
+					<row>
+						<cell>int score</cell>
+						<cell>The total of the values of the tile's neighbors</cell>
+					</row>
+					<row>
+						<cell>data</cell>
+						<cell>description</cell>
+					</row>
+				</table>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="AI" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1601774798.93" ts_lastsave="1601774798.93" unique_id="4">
+				<rich_text></rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Player" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1601774824.67" ts_lastsave="1601775166.09" unique_id="5">
+				<rich_text justification="left"></rich_text>
+				<table char_offset="0" col_max="900" col_min="40">
+					<row>
+						<cell>int[] numbers</cell>
+						<cell>The list of numbers that the player will place on the grid</cell>
+					</row>
+					<row>
+						<cell>int numberIndex</cell>
+						<cell>The current index being used to access the array of numbers</cell>
+					</row>
+					<row>
+						<cell>color color</cell>
+						<cell>The color of this player</cell>
+					</row>
+					<row>
+						<cell>data</cell>
+						<cell>description</cell>
+					</row>
+				</table>
+			</node>
+		</node>
+	</node>
+</cherrytree>

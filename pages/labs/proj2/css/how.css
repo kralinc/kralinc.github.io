@@ -1,0 +1,9 @@
+h2, li, p, label, h1, h3, h4, div
+{
+    font: 1.5em Arial, sans-serif;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}

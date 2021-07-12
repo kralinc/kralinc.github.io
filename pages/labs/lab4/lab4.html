@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <link rel="stylesheet" type="text/css" href="css/lab4.css">
+        <script src="js/lab4.js"></script>
+        <meta charset="utf-8">
+        <title>Miles per Gallon</title>
+    </head>
+    <body>
+        <!-- title -->
+        <h1 class="centered">Miles per Gallon</h1>
+
+        <!-- form where all of the magic happens.
+                setting return to false makes the page not reload for some reason-->
+        <form id="user-form" action="" onsubmit="validateForm();return false">
+            <label for="username">First Name:</label><br>
+            <input type="text" id="username" name="username" class="textin" required><br>
+            <label for="miles">Miles driven:</label><br>
+            <input type="text" id="miles" name="miles" class="textin" required><br>
+            <label for="gallons">Gallons consumed:</label><br>
+            <input type="text" id="gallons" name="gallons" class="textin" required><br>
+            <input type="submit" value="Submit" id="submit"><br>
+            <p id="errorlabel"></p><!-- for when you're bad -->
+        </form>
+
+        <h2 id="output" class="centered"></h2><!-- for when you're good -->
+    </body>
+</html>

@@ -1,0 +1,117 @@
+/*Reset to get rid of weird margins on the side of the window*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* set full size background image */
+html {
+  	background: url("../img/back.jpg") no-repeat center center fixed;
+  	background-size: cover;
+	
+}
+
+/*Flex all items to middle of screen*/
+#content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+/* white box that contains all of the elements */
+#content-box {
+    background-color: #FFF;
+    width: 80vw;
+    height: 70vh;
+	box-shadow: 1em 1em 2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 1em;
+}
+
+/*Bordered box containing the slideshow images */
+#slideshow-container {
+    width: 90%;
+    height: 80%;
+    margin: 1em;
+    background-color: #777;
+    border: 1em solid black;
+}
+
+/*The slideshow images */
+#slideshow {
+    height: 100%;
+    max-width: 100%;
+    justify-content: center;
+    margin: auto;
+    display: block;
+}
+
+/*Custom button style */
+.button {
+    display: inline-block;
+    margin-right: 1em;
+    background-color: #BBB;
+	padding: 0 1em 0 1em;
+	font-size: 1.5em;
+	font-weight: bold;
+	border: none;
+}
+
+.button:hover {
+	background-color: #AAA;
+}
+
+/*Container to align buttons in the middle */
+#button-container {
+    margin: auto;
+    display: flex;
+	justify-content: center;
+    margin-top: 1em;
+}
+
+/*Responsive design */
+@media only screen and (max-width: 1000px) {
+	
+	#content-box {
+		width: 100%;
+		height: 90vh;
+	}
+	
+	#slideshow-container {
+		width: 95%;
+		height: 75%;
+		display: flex;
+		align-items: middle;
+	}
+	
+	#slideshow {
+		width: 100%;
+		height: auto;
+		max-height: 100%;
+	}
+	
+	.button {
+		padding: 3vw 17vw 3vw 17vw;
+		font-size: 2em;
+	}
+}

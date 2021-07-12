@@ -1,0 +1,299 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+:root {
+	--tile_size: 6em;
+}
+
+div {
+    font-family: sans-serif;
+}
+
+.flexy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#flexbox {
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+#flexbox > * {
+    margin: 1em;
+}
+
+#setup-container {
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 1em;
+}
+
+a {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#setup-form {
+    flex-direction: column;
+}
+
+/*Put a little space around everything*/
+#setup-form > * {
+    margin: 1em;
+}
+/*Number inputs*/
+.num-in {
+    background-color: #AAA;
+    border: none;
+    padding: 1em;
+    transition: padding 0.2s;
+    font: 1.5em Arial, sans-serif;
+}
+
+.num-in:focus {
+    padding: 1.1em;
+}
+
+.num-in-error {
+    background-color: coral;
+}
+
+#setup-form-error {
+    color: crimson;
+}
+
+.label {
+    text-align: center;
+    font-weight: bold;
+}
+
+/*Submit button*/
+.submit-in {
+    display: block;
+    border: none;
+    background-color: forestgreen;
+    font: 1.5em Arial, sans-serif;
+    transition: padding 0.2s;
+    padding: 1em;
+    color: #FFF;
+}
+
+.submit-in:hover {
+    padding: 1.1em;
+}
+/*Doing a custom checkbox was a lot of work 
+So I just pulled it off of w3schools since this is due in 2 days*/
+ /* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 1em;
+  margin-bottom: 1em;
+  cursor: pointer;
+  font-size: 1em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2.5em;
+  width: 2.5em;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 1em;
+  top: 0.2em;
+  width: 0.5em;
+  height: 1.1em;
+  border: solid white;
+  border-width: 0 0.3em 0.3em 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} 
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto;
+	grid-gap: 0.5em;
+    margin: 2em;
+    overflow: auto;
+    max-height: 90vh;
+}
+
+.tile {
+	background-color: grey;
+	width: var(--tile_size);
+	height: var(--tile_size);
+	font-weight: bold;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    text-shadow:
+		-1px -1px 0 #FFF,
+		1px -1px 0 #FFF,
+		-1px 1px 0 #FFF,
+		1px 1px 0 #FFF;
+}
+
+#ui {
+    flex-direction: column;
+}
+
+#next-color {
+    display: none;
+}
+
+#next-num {
+	text-align: center;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+#scores {
+    margin: 1em;
+    flex-direction: column;
+    overflow: auto;
+    max-height: 75vh;
+}
+
+#scores > div {
+    margin-right: 1em;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#win-box-container {
+    width: 100%;
+    height: 100%;
+    background-color: #5555;
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    justify-content: center;
+}
+
+#win-box {
+    background-color: #fff;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+}
+
+#win-box > p {
+    font-size: 4em;
+}
+
+#win-box > * {
+    margin: 1em;
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    #setup-container {
+        width: 100%;
+    }
+    
+    #setup-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    #setup-form div {
+        width: 100%;
+    }
+    
+    .num-in {
+        width: 100%;
+        font-size: 2em;
+        font-weight: bold;
+    }
+    
+    .submit-in {
+        width: 100%;
+        font-size: 2em;
+        font-weight: bold;
+    }
+}

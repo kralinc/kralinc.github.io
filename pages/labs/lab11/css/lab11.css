@@ -1,0 +1,29 @@
+/*Displays a circle*/
+.circle {
+    display: block;
+    border-radius: 50%;
+    background-color: coral;
+    width: 10vw;
+    height: 10vw;
+}
+
+/*Originally displayed a rectangle, hence the name.*/
+/*Changed it to a square when the rectangle would go outside its bounding box during its animation*/
+.rect {
+    display: block;
+    transform: rotate(360deg);
+    border-radius: 0;
+    background-color: greenyellow;
+    width: 10vw;
+    height: 10vw;
+}
+
+/*Spins the object around when changing shape*/
+.swirly {
+    transition: all 1s ease-in-out;
+}
+
+/*Just a smol margin around the shape*/
+#container {
+    margin: 1.5em;
+}

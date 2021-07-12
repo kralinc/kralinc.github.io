@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <link rel="stylesheet" type="text/css" href="css/lab2.css">
+        <script src="js/lab2.js"></script>
+        <meta charset="utf-8">
+        <title>#1 Shopping List</title>
+    </head>
+
+    <body>
+        <!-- Put all of the content in a "content" div so that I can style it to not smash into the sides of the screen -->
+        <div id="content">
+            <!-- this div is where the input box and buttons go -->
+            <div id="input">
+                <h1>SHOPPING LIST! [BEST]</h1>
+                <br>
+                <label id="inputLabel">Write item #1</label><br> <!-- placeholder label. This gets changed by JS eventually -->
+                <input type="text" name="Item" id="itemInput"><br>
+                <div id="buttons">
+                    <button onclick="save(nextItemIndex)">Save</button>
+                    <button onclick="load()">Load</button>
+                    <button onclick="erase()">Clear</button>
+                </div>
+            </div>
+            <!-- this is where the todo list goes. I wanted to generate this dynamically but we're not that far yet -->
+            <div id="list">
+                <ol>
+                    <li id="item0"></li><button onclick="setNextItemIndex(0)">Edit</button>
+                    <li id="item1"></li><button onclick="setNextItemIndex(1)">Edit</button>
+                    <li id="item2"></li><button onclick="setNextItemIndex(2)">Edit</button>
+                    <li id="item3"></li><button onclick="setNextItemIndex(3)">Edit</button>
+                    <li id="item4"></li><button onclick="setNextItemIndex(4)">Edit</button>
+                </ol>
+            </div>
+            <img id="ska" src="img/ska.png"><!-- good -->
+        </div>
+    </body>
+</html>

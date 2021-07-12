@@ -1,0 +1,12 @@
+/*
+    Turns the color elements into neat colored blocks
+*/
+.color-text {
+    display: inline-block;
+    font-family: monospace;
+    font-size: 2em;
+    text-align: center;
+    /*width: 10em;
+    height: 10em;*/
+    padding: 3em;
+}

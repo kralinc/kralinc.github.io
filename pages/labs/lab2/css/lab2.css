@@ -1,0 +1,79 @@
+/*Items ordered roughly top to bottom on the page */
+
+/*makes most text sans-serif*/
+p, h1, h2, h3, label, a {
+    font-family: sans-serif;
+}
+
+/*I think it looks better if nothing is pushed to the very edge of the screen*/
+#content {
+    margin: 2em;
+}
+
+/*The label above the input box*/
+#inputLabel {
+    font-weight: bold;
+}
+
+/*the input box that you use to write shopping list items */
+#itemInput {
+    margin: 0.5em;
+    padding: 0.5em;
+    width: 25%;
+    font-size: 1.2em;
+    transition: border 0.1s;
+    border: 0.1em solid #333;
+    border-radius: 0.1em;
+    background-color: #EEE:
+}
+
+/*looks cool when you highlight the input box*/
+#itemInput:focus {
+    border: 0.2em solid black;
+    background-color: #DDD;
+}
+
+/*container for the buttons*/
+#buttons {
+    margin: 1em;
+}
+
+/*style for every button on the page*/
+button {
+    background-color: #E55;
+    border-radius: 1em;
+    border-style: none;
+    padding: 1em;
+    color: white;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #A33;
+}
+
+/*Container for the shopping list items*/
+#list {
+ margin: 1em;
+ padding: 1em;
+ border-radius: 1em;
+ border: 1em solid #E55;
+	float: left;
+}
+
+/*style for every list item on the page*/
+li {
+    font-size: 1.3em;
+    font-family: sans-serif;
+    margin: 0.5em;
+}
+
+
+/*My son*/
+#ska {
+
+    border-radius: 50%;
+    float: right;
+    border: 2em double pink;
+    margin: 5em;
+}

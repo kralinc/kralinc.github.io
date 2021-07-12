@@ -1,0 +1,17 @@
+/*Set font to sans-serif for the elements with text*/
+div {
+    font-family: sans-serif;
+}
+
+/*Do some cool styling on the text elements*/
+#message, #clickme {
+    padding: 1em;
+    background-color: crimson;
+/*    border: 1px solid black;*/
+    font-size: 1.3em;
+}
+
+/*Hide the secret message initially*/
+#message {
+    display: none;
+}

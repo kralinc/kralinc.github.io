@@ -1,0 +1,59 @@
+/* I prefer sans serif */
+a, label, p, h1, h2, h3, h4 {
+    font-family: sans-serif;
+}
+
+/* puts a slight margin around everything */
+body {
+    margin: 2em;
+}
+
+/* puts a bit of spacing between all of the inputs */
+input {
+    margin-bottom: 1em;
+}
+
+/* makes all of the labels in the form bold */
+label {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+/*Fancy submit button for the form*/
+#submit {
+    background-color: #DDD;
+    font-weight: bold;
+    border-radius: 0.5em;
+    padding: 1em;
+    transition: padding 0.2s, background-color 0.2s;
+}
+
+#submit:hover {
+    background-color: #CCC;
+    padding: 1.1em;
+}
+
+/* all of the text inputs */
+.textin{
+    margin: 0 1em 1em 0;
+    padding: 1em 1em 1em 0.5em;
+    transition: padding 0.2s;
+}
+
+.textin:focus{
+    padding: 1.1em 1.1em 1.1em 0.5em;
+}
+
+/* border of the entire form */
+#user-form {
+    margin: auto;
+    width: 50%;
+    background-color: #EEE;
+    padding: 1em;
+}
+
+/* used for centering any text I want */
+.centered {
+    text-align: center;
+    margin: 1em;
+}

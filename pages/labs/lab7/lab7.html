@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <link rel="stylesheet" type="text/css" href="css/lab7.css">
+        <script src="js/lab7.js" defer></script>
+        <meta charset="utf-8">
+        <title>Life Insurance [REAL]</title><!-- I promise -->
+    </head>
+    <body>
+        <div id="content"><!-- puts everything in a central column -->
+            <p id="title">Life Insurance Request Form for Real Insurancetm</p>
+                <!-- The insurance form -->
+            <form id="insurance-form" onSubmit="return false">
+                <p id="error-messages"></p>
+                <label for="age">Your Age (0-120)</label><br>
+                <input id="age" class="text-input" name="age" type="text"><br>
+                <label for="insurance-amount">Amount of insurance desired (1=$10k)</label><br>
+                <input id="insurance-amount" class="text-input" name="insurance-amount" type="text"><br>
+                <input id="submit" type="submit" name="submit" value="Submit">
+            </form>
+            <!-- output from the form -->
+            <p id="output"></p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <link rel="stylesheet" type="text/css" href="css/standard.css">
+        <link rel="stylesheet" type="text/css" href="css/lab11.css">
+<!--        Include angularjs and its animation module-->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+        <meta charset="utf-8">
+    </head>
+    <body>
+<!--        angular app controller -->
+        <div id="content" ng-app="lab10" ng-controller="theController">
+            <div id="display-card">
+                <h1>AngularJS Animation Example</h1>
+<!--                Checkbox controls the class of the circle below-->
+                 <input type="checkbox" name="czech" ng-model="circleClass">
+                <div id="container">
+<!--                    This circle changes shape when its class is changed from the checkbox above-->
+                    <div class="circle swirly" ng-class="{'circle': circleClass, 'rect': !circleClass}"></div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="js/lab10.js"></script>
+    </body>
+</html>
