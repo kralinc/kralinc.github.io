@@ -39,7 +39,7 @@ html {
 }
 
 /* set to my preferred font */
-h1, h2, h3, h4, h5, h6, label, p {
+h1, h2, h3, h4, h5, h6, label, p, a{
     font-family: sans-serif;
 }
 
