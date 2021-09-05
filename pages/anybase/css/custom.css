@@ -1,0 +1,20 @@
+html, body {
+    height: 100%;
+}
+
+#result {
+    word-wrap: break-word;
+}
+
+.container {
+    background-color: #F5F5F5;
+    height: 100%;
+}
+
+#content {
+    background-color: #EEE;
+}
+
+#dec-base-form {
+    margin: 1em;
+}
