@@ -1,17 +1,23 @@
+html { 
+    background: url("img/back.png") no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+
 p, h1, h2, h3, label, a {
     font-family: monospace;
 }
 
 h1 {
-    font-size: 3.5em;
+    font-size: 3rem;
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 4rem;
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 1rem;
 }
 
 #content {
@@ -19,7 +25,7 @@ h3 {
 }
 
 #all-links {
-    display: flex;
+    /* display: flex; */
 }
 
 .link-container {
@@ -31,26 +37,38 @@ a {
     font-size: 2em;
 }
 
-html { 
-  background: url("img/back.png") no-repeat center center fixed;
-  background-size: cover;
-}
-
 .link {
     display: inline-block;
     margin: 1em;
-    padding: 2em;
-    font-size: 4em;
+    padding: 1.5em;
+    font-size: 3rem;
     background-color: #ffffff44;
     transition: background-color 0.2s, padding 0.2s, color 0.2s;
     color: #000;
     border-radius: 1em;
+    width: 270px;
+    height: 270px;
 }
 
 .link:hover {
     background-color: #ffffff99;
-    padding: 2.2em;
+    padding: 1.7em;
     color: #00c;
 }
 
 
+@media screen and (max-width: 1000px)
+{
+    .link {
+        padding: 2em 2em 2em;
+        font-size: 2em;
+        display: block;
+        width:auto;
+        height:auto;
+    }
+
+    #all-links {
+        display: flex;
+        flex-direction: column;
+    }
+}
