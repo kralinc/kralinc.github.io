@@ -9,8 +9,14 @@ const MAX_DECIMAL = 100;
 
 function doConversion()
 {
-    const numberString = DEC_IN.value.toUpperCase();
+    let numberString = DEC_IN.value.toUpperCase();
     DEC_IN.value = numberString;
+    let isNegative = false;
+    if (numberString.substr(0,1) == "-")
+    {
+        isNegative = true;
+        numberString = numberString.substr(1, numberString.length - 1);
+    }
     const splitString = numberString.split(".");
     const intString = splitString[0];
     let integer = parseInt(intString);
@@ -49,6 +55,11 @@ function doConversion()
         {
             result += "." + decToAnyFrac(parseFloat("." + splitString[1]), base, MAX_DECIMAL);
         }
+    }
+
+    if (isNegative)
+    {
+        result = "-" + result;
     }
 
     OUT.innerHTML = result;
@@ -99,6 +110,10 @@ function anyToDec(numberString, base)
     for (let i = 0; i < numParts[0].length; i++)
     {
         const digit = ALPHABET.indexOf(numParts[0].charAt(i));
+        if (digit >= base)
+        {
+            return "ERR";
+        }
         result += Math.pow(base, numParts[0].length - i -1) * digit;
     }
 
@@ -107,6 +122,10 @@ function anyToDec(numberString, base)
         for (let i = 0; i < numParts[1].length; i++)
         {
             const digit = ALPHABET.indexOf(numParts[1].charAt(i));
+            if (digit >= base)
+            {
+                return "ERR";
+            }
             result += Math.pow(base, -i-1) * digit;
         }
     }
