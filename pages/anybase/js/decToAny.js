@@ -90,7 +90,7 @@ function decToAnyFrac(frac, base, max)
     while (iterations < max && frac > 0)
     {
         frac *= base;
-        result += Math.floor(frac);
+        result += ALPHABET[Math.floor(frac)];
         frac = frac - Math.floor(frac);
         iterations++;
     }
