@@ -1,0 +1,3 @@
+[submodule "hungergames-js"]
+	path = hungergames-js
+	url = https://github.com/kralinc/hungergames-js
