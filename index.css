@@ -2,6 +2,7 @@
     --my-black: #141414;
     --my-red: #bb3344;
     --my-orange: #ffaa55;
+    --my-blue: #0099bb;
     --my-pink: #ffccdd;
     --my-white: #fefeee;
 }
@@ -20,6 +21,7 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--my-blue);
 }
 
 .navbar {
