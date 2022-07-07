@@ -3,6 +3,7 @@
     --my-red: #bb3344;
     --my-orange: #ffaa55;
     --my-blue: #0099bb;
+    --my-grey: #d3deee;
     --my-pink: #ffccdd;
     --my-white: #fefeee;
 }
@@ -15,7 +16,7 @@ html {
 body {
     font-family: monospace;
     text-decoration: none;
-    background-color: #d3deee;
+    background-color: var(--my-grey);
     height: 100%;
 }
 
