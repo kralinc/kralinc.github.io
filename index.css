@@ -29,6 +29,10 @@ a {
     background-color: var(--my-pink);
 }
 
+#navbarSupportedContent .nav-link {
+    color: var(--my-black);
+}
+
 #content {
     text-align: center;
     background-color: var(--my-white);
