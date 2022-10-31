@@ -4,3 +4,6 @@
 [submodule "pokesmash"]
 	path = pokesmash
 	url = https://github.com/kralinc/pokesmash
+[submodule "markov"]
+	path = markov
+	url = git@github.com:kralinc/markov.git
