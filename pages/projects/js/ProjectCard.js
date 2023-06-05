@@ -6,7 +6,7 @@ export default {
         project: Object,
     },
     template: `
-    <div class="project row rounded">
+    <div class="project row rounded border m-3">
         <div class="col-9">
             <a class="title-link" :href="project.link">{{project.name}}</a>
         </div>

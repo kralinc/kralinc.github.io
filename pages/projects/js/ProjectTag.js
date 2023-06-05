@@ -17,7 +17,7 @@ export default {
             return "#478CBF";
         case "haxe":
             return "#F68712";
-        case "ludum dare":
+        case "game jam":
             return "#EE5533";
         case "java":
             return "#E42D2E";

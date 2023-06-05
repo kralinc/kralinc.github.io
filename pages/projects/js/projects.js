@@ -19,7 +19,7 @@ import ProjectCard from './ProjectCard.js';
             link: "https://cactusdan.itch.io/soulful-harvest",
             year: 2023,
             desc: "Game for Ludum Dare 52. I remember this game well due to significant changes being made to the implementation of game mechanics after I started, which hardly happened with previous projects. A full writeup is available on my blog.",
-            tags: ["ludum dare", "godot"]
+            tags: ["game jam", "godot"]
           },
           {
             name: "Mudkip Impossible Game",
@@ -40,7 +40,7 @@ import ProjectCard from './ProjectCard.js';
           link: "https://cactusdan.itch.io/calcium-carnage",
           year: 2022,
           desc: "Made for Ludum Dare 50. Also my first game for a game jam.",
-          tags: ["haxe", "ludum dare"],
+          tags: ["haxe", "game jam"],
           },
           {
           name: "Markov Chain Generator",
@@ -74,30 +74,35 @@ import ProjectCard from './ProjectCard.js';
           name: "Garfielf Blackjack (itch.io)",
           link: "https://cactusdan.itch.io/garfielf-blackjack",
           year: 2020,
+          desc: "First game published on itch.io. It was my largest development project at the time, with a lot of it going into the moddability and the fact that I had to write the UI myself.",
           tags: ["java"]
           },
           {
           name: "Base to Base Converter",
           link: "pages/anybase/anybase.html",
           year: 2021,
+          desc: "This project is a simple tool to convert numbers from one base to any other base from 2-36. It supports decimals as well.",
           tags: ["javascript"]
           },
           {
           name: "CMWEB 200 Personal Site",
           link: "cmweb200.html",
           year: 2020,
+          desc: "The personal site I created for my javascript class in community college. It contains all of the projects I did in that class, most notably Proximity and Bullet Hell Game.",
           tags: ["javascript"]
           },
           {
           name: "Mental Math Trainer",
           link: "pages/mentalmath/index.html",
           year: 2020,
+          desc: "A tool to generate randomized arithmetic problems. Meant to train mental math speed.",
           tags: ["javascript"]
           },
           {
           name: "Toki Pona Sentence Generator",
           link: "pages/tokiponagame/index.html",
           year: 2021,
+          desc: "Generates random sentences in Toki Pona using a structure I've long since forgotten. If I ever host this site I'll convert this page into an API to be more useful.",
           tags: ["javascript"]
           }
         ]);
