@@ -21,6 +21,14 @@ export default {
             return "#EE5533";
         case "java":
             return "#E42D2E";
+        case "python":
+            return "#ffe263";
+        case "sql":
+            return "#dd33dd";
+        case "c++":
+            return "#004283";
+        default:
+          return "#000000";
       }
     }
   },

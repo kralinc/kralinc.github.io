@@ -6,12 +6,14 @@ export default {
         project: Object,
     },
     template: `
-    <div class="project row rounded border m-3">
-        <div class="col-9">
-            <a class="title-link" :href="project.link">{{project.name}}</a>
-        </div>
-        <div class="col-3">
-            <p>{{project.year}}</p>
+    <div class="project col-12 rounded border mt-3 p-3">
+        <div class="row mb-1">
+            <div class="col-9">
+                <a class="title-link" :href="project.link">{{project.name}}</a>
+            </div>
+            <div class="col-3">
+                <h5>{{project.year}}</h5>
+            </div>
         </div>
         <div class="col-12">
             <p>{{project.desc}}</p>
