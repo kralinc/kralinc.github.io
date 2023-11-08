@@ -34,7 +34,7 @@ export default {
   },
   template:
   `
-  <div class="col-2 text-center">
+  <div class="col-6 col-sm-4 col-lg-2 text-center">
     <p class="rounded p-1 text-light" :style="'background-color: ' + color">{{name}}</p>
   </div>
   `
