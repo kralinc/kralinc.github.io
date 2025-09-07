@@ -46,6 +46,27 @@ createApp({
 
     const projects = ref([
         {
+          name: "Untitled Strategy Game",
+          link: "https://github.com/kralinc/cw2100game",
+          year: 2025,
+          desc: "Unfinished but mostly playable hex-based strategy game in godot. It includes my first attempt at AI opponents that produce surprisingly competent gameplay. My intent is to finish it with a much higher degree of polish than I usually do. Still finishing up the gameplay though so never got to the polish part. Currently shelved since I started making a different game with a friend.",
+          tags: ["godot"]
+        },
+        {
+          name: "WebSocketChat",
+          link: "https://github.com/kralinc/WebSocketChat",
+          year: 2024,
+          desc: "Unfinished websocket proof of concept for a chatroom. Uses the spring framework. It was meant to be a stepping stone to a jackbox-style game where people join with their phones. Project isn't totally shelved but I lost interest and might return someday.",
+          tags: ["java"]
+        },
+        {
+          name: "Friendly Villagers",
+          link: "https://github.com/kralinc/FriendlyVillagers",
+          year: 2024,
+          desc: "This is a mod for the video game 'Worldbox'. It allows civilizations to have any species in their empire. In its original development no such feature existed, so all empires could only have a single species, and simply killed all of the others. I thought this was boring and made the mod to make it more fun for me. Ever since a game update in 2025 multi-species empires are now possible under some circumstances, and I updated the mod just to expand on what's already there.",
+          tags: ["c#", "mod"]
+        },
+        {
           name: "MyKitchen 'Ceres'",
           link: "https://github.com/kralinc/ceres",
           year: 2023,
@@ -116,6 +137,13 @@ createApp({
         tags: ["javascript", "jquery"]
         },
         {
+          name: "Proximity",
+          link: "../../pages/honors_project/index.html",
+          year: 2020,
+          desc: "My submission for the project requirement of my community college's honors program. This is an implementation of the game Proximity on a square grid. You can have an arbitrary number of AI and human players, including zero human players. Playable on mobile as well as desktop.",
+          tags: ["javascript", "jquery"]
+        },
+        {
           name: "JFX ToDoList 2",
           link: "https://github.com/kralinc/jfx-todolist-2",
           year: 2021,
@@ -170,6 +198,34 @@ createApp({
         year: 2021,
         desc: "Generates random sentences in Toki Pona using a structure I've long since forgotten. If I ever host this site I'll convert this page into an API to be more useful.",
         tags: ["javascript"]
+        },
+        {
+          name: "Snake",
+          link: "https://github.com/kralinc/processing-snake",
+          year: 2019,
+          desc: "Implementation of snake in processing3. The snake speeds up as you gain score.",
+          tags: ["java"]
+        },
+        {
+          name: "Minesweeper",
+          link: "https://github.com/kralinc/minesweeper-processing",
+          year: 2019,
+          desc: "Implementation of minesweeper in processing3. The primary goal was to test my new scene interface, which would let me make more complex games. The interface works by implementing its own versions of processing specific methods, such as draw(), start(), onMouseClicked(), and a few others. These classes are all put into an array in the main file, and the index of the current scene can be switched from within each scene. The methods of the class that the index points to are run in the main file.",
+          tags: ["java"]
+        },
+        {
+          name: "Tetris (Processing3)",
+          link: "https://github.com/kralinc/processing3-tetris",
+          year: 2019,
+          desc: "The second of a few games I made using processing3. It's a fully playable implementation of tetris, including increasing levels and showing a preview of the next piece.",
+          tags: ["java"]
+        },
+        {
+          name: "Avoid Spikes Game",
+          link: "https://github.com/kralinc/avoid-spikes-game",
+          year: 2019,
+          desc: "A game where 'spikes' (squares) emerge from all sides and you use WASD to avoid them, earning one point per second. This was the start of a series of a few game where I used Processing3 to recreate famous games. I consider this my first 'good' program I made. It's long enough ago that I didn't really understand how github worked and published the built applications instead of the source code, though the build does include the source in the folder structure.",
+          tags: ["java"]
         }
       ]);
 

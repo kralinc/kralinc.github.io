@@ -2,8 +2,8 @@
     --my-black: #141414;
     --my-red: #bb3344;
     --my-orange: #ffaa55;
-    --my-blue: #0099bb;
-    --my-grey: #d3deee;
+    --my-blue: #00aacc;
+    --my-grey: #636666;
     --my-pink: #ffccdd;
     --my-white: #fefeee;
 }
@@ -16,8 +16,9 @@ html {
 body {
     font-family: monospace;
     text-decoration: none;
-    background-color: var(--my-grey);
+    background-color: var(--my-black);
     height: 100%;
+    color: var(--my-white);
 }
 
 a {
@@ -26,16 +27,20 @@ a {
 }
 
 .navbar {
-    background-color: var(--my-pink);
+    background-color: var(--my-black);
+}
+
+.navbar-brand {
+    color: var(--my-white);
 }
 
 #navbarSupportedContent .nav-link {
-    color: var(--my-black);
+    color: var(--my-white);
 }
 
 #content {
     text-align: center;
-    background-color: var(--my-white);
+    background-color: var(--my-grey);
     min-height: 100%;
     padding: 0;
 }
@@ -44,9 +49,10 @@ a {
     margin: 1rem;
     padding: 2rem;
     display: block;
-    background-color: var(--my-orange);
+    background-color: var(--my-black);
     font-size: 1.3rem;
     border-radius: 1rem;
+    border: 2px solid var(--my-orange);
 }
 
 #aboutsection {
@@ -72,4 +78,9 @@ a {
 #aboutme {
     line-height: 200%;
     text-align: justify;
+}
+
+.project {
+    border: 2px solid var(--my-orange);
+    background-color: var(--my-black);
 }

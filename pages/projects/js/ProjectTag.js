@@ -27,6 +27,10 @@ export default {
             return "#dd33dd";
         case "c++":
             return "#004283";
+        case "mod":
+            return "#00FF00";
+        case "c#":
+            return "#9179E4"
         default:
           return "#000000";
       }
