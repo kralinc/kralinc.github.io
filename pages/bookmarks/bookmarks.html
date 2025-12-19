@@ -8,7 +8,7 @@
         <link rel="icon" type="image/icon" href="../../favicon.ico">
         <script src="js/projects.js" type="module"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Cactusdan Projects</title>
+        <title>Carl's Bookmarks</title>
     </head>
     <body>
         <div id="content" class="container">
@@ -26,24 +26,34 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="https://cactusdan.bearblog.dev/blog">Blog</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/bookmarks/bookmarks.html">Bookmarks</a>
-                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
             <div class="container">
-                <div class="row m-1">
-                    <label class="form-label" for="text-search">Search:</label>
-                    <input class="form-control" type="text" v-model="searchedText">
-                    <label class="form-label" for="order-by">Order by</label>
-                    <select class="form-control" id="order-by" name="order-by" v-model="selectedOrdering">
-                        <option v-for="item of orderByItems" :value="item">{{item}}</option>
-                    </select>
+                <div class="project col-12 rounded mt-3 p-3">
+                    <div class="col-12">
+                        <a class="title-link" href="https://simulationcorner.net/index.php?page=sam">SAM: Software Automatic Mouth</a>
+                    </div>
+                    <div class="col-12">
+                        <p>SAM is one of the oldest text-to-speech programs, originally written for the Commodore 64 in 1982. Sebastian Macke wrote an implementation of it in C, and has made it available to use on the web.</p>
+                    </div>
                 </div>
-                <div class="row m-1">
-                    <project-card v-for="project of displayedProjects" :key="project.name" :project="project"></project-card>
+                <div class="project col-12 rounded mt-3 p-3">
+                    <div class="col-12">
+                        <a class="title-link" href="https://en.nearbywiki.org">Nearbywiki</a>
+                    </div>
+                    <div class="col-12">
+                        <p>Displays a map with locations tagged with their respective wikipedia articles. See what famous places are around you.</p>
+                    </div>
+                </div>
+                <div class="project col-12 rounded mt-3 p-3">
+                    <div class="col-12">
+                        <a class="title-link" href="https://web.archive.org/web/20160707093937/https://msu.edu/course/asc/232/song_project/dectalk_pages/DECtalk%20Singing.html">DECtalk Singing</a>
+                    </div>
+                    <div class="col-12">
+                        <p>DECtalk is a text to speech synthesizer and software that was widely used in the 1980s. You may have heard it before as the voice of stephen hawking, and the tts used in moonbase alpha. This webpage has instructions for how to make the voices sing. The software itself can be found on the internet archive.</p>
+                    </div>
                 </div>
             </div>
         </div>
